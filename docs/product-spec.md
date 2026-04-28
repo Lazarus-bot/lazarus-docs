@@ -161,6 +161,7 @@ Required behavior:
 
 - Post only when a signal passes the configured public threshold.
 - Support a separate watchlist feed for informational token ideas.
+- Use strict CTO-able tokens first, then recent indexed pools/tokens that pass basic safety scoring when CTO-able rows are empty.
 - Clearly label watchlist posts as `Lazarus Watchlist` and signal posts as `Lazarus Signal`.
 - Never let watchlist-only posts publish executor trade signals.
 - Avoid duplicate channel posts for the same signal.

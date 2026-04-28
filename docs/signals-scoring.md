@@ -6,7 +6,7 @@ Lazarus evaluates tokens through multiple lenses and converts the result into us
 
 ### Watchlist Idea
 
-A notifier-only post for tokens that are already CTO-able and worth human review, but are not necessarily a fresh executor-grade trade signal. Watchlist ideas should be labelled as `Lazarus Watchlist` and use `Token idea` in the score section so users understand the difference.
+A notifier-only post for tokens that are already CTO-able, or recent indexed pools/tokens that pass basic safety scoring, but are not necessarily a fresh executor-grade trade signal. Watchlist ideas should be labelled as `Lazarus Watchlist` and use `Token idea` in the score section so users understand the difference.
 
 Watchlist ideas should not trigger automatic trade execution. They are a discovery feed for users who want names to research.
 
