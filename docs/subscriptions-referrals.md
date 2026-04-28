@@ -64,3 +64,52 @@ Referral accounting should be ledger-based:
 - Manual adjustments should be recorded.
 - Duplicate commission events should be prevented.
 
+## Subscription States
+
+| State | Meaning | User Experience |
+|---|---|---|
+| Trialing | User is inside the 48-hour trial | Access is open, expiry is shown |
+| Active | Payment is confirmed | Premium access is open |
+| Past due | A renewal period ended | User is prompted to pay |
+| Locked | Access is blocked | User must pay to continue |
+| Cancelled | Subscription is no longer active | User can restart by paying |
+
+The bot should always explain the state in plain English.
+
+## Payment UX Requirements
+
+Payment screens should show:
+
+- Plan.
+- Amount.
+- Chain.
+- Payment address.
+- Expiry time if invoice-based.
+- Current status.
+- What happens after payment.
+
+Users should not need to contact support to understand whether they are locked, trialing, or paid.
+
+## Referral Commission Lifecycle
+
+1. User creates or receives a referral code.
+2. New user signs up with that code.
+3. Attribution is stored.
+4. Referred user pays or generates eligible platform fees.
+5. Commission is created.
+6. Commission becomes available after any hold/review period.
+7. Referrer requests payout or payout is processed automatically later.
+8. Payout is marked paid with transaction reference when available.
+
+## Referral Messaging
+
+Referral copy should be easy to share:
+
+```text
+I am using Lazarus to track early CTO token signals on Base and Ethereum.
+
+Use my code: ABC123
+Start here: https://t.me/example_bot?start=ABC123
+```
+
+The final bot copy can be shorter, but it should preserve the code and start link clearly.

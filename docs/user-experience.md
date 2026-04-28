@@ -126,3 +126,104 @@ The referral menu should make sharing easy:
 
 Referral copy should be direct and easy to forward.
 
+## Example Main Menu Structure
+
+The exact wording can evolve, but the structure should stay stable:
+
+```text
+Lazarus
+
+Account
+- Plan: Trial / Premium / Locked
+- Wallets: 1 of 5
+- Mode: Paper
+
+Signal Setup
+- Detector: Balanced
+- Trading: Starter
+- Chains: Base
+
+Tip: Start with paper mode until your settings feel right.
+```
+
+Recommended button layout:
+
+```text
+[Wallets] [Portfolio]
+[PnL] [Detector]
+[Trading] [Billing]
+[Referrals] [Help]
+```
+
+## Example Detector Menu
+
+```text
+Detector
+
+Profile
+- Preset: Balanced
+- Interface: Guided
+- Chains: Base
+
+Filters
+- Score: 70/100 minimum
+- Liquidity: $10K+
+- Holders: 100+
+- Cooldown: 60 minutes
+
+Tip: Use Advanced only when you want to tune each filter yourself.
+```
+
+Recommended buttons:
+
+```text
+[Starter] [Balanced: On] [Aggressive]
+[Advanced] [Chains: Base]
+[Trading] [Menu]
+```
+
+## Empty States
+
+Empty states should help users decide what to do next.
+
+Examples:
+
+- No wallets: "Add a wallet to start tracking portfolio and PnL."
+- No portfolio snapshot: "Portfolio will appear after the next wallet scan."
+- No referrals: "Share your code to start tracking referred users."
+- Trial expired: "Your trial has ended. Upgrade to continue."
+
+Avoid technical explanations in empty states.
+
+## Confirmation Rules
+
+Require confirmation for:
+
+- Importing a private key.
+- Enabling live mode.
+- Acknowledging live trading risk.
+- Removing or disabling a wallet.
+- Requesting referral payout.
+- Any destructive admin action.
+
+Do not require confirmation for:
+
+- Viewing menus.
+- Switching guided presets.
+- Opening external links.
+- Viewing portfolio or PnL.
+
+## Tone Rules
+
+Use plain, confident language:
+
+- "Your trial ends in 12 hours."
+- "Live trading is locked until risk acknowledgement and operator approval."
+- "Balanced is a practical default for most users."
+
+Avoid hype:
+
+- Do not say "guaranteed."
+- Do not say "safe token."
+- Do not say "easy profit."
+- Do not imply Lazarus has certainty.

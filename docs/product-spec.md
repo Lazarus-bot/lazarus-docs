@@ -151,3 +151,103 @@ Advanced mode exposes detailed filters:
 
 Any manual advanced change should be stored as a custom profile.
 
+## Feature Inventory
+
+### Public Signal Channel
+
+The signal channel is the top of the funnel. It should make Lazarus feel alive before a user ever opens the private bot.
+
+Required behavior:
+
+- Post only when a signal passes the configured public threshold.
+- Avoid duplicate channel posts for the same signal.
+- Keep the message short enough for Telegram mobile.
+- Include enough data for independent review.
+- Include links that open directly to useful external tools.
+- Avoid hype language that implies certainty.
+
+Good signal posts should answer:
+
+- What token is this?
+- What chain is it on?
+- Why did Lazarus notice it?
+- How strong is the signal?
+- How risky does the token look from basic checks?
+- Where can I verify it?
+
+### Private User Bot
+
+The user bot should act like a command center, not a raw settings dump.
+
+Required behavior:
+
+- Load or create a user account from Telegram identity.
+- Start a 48-hour trial for new users.
+- Display subscription state clearly.
+- Let users add wallets.
+- Let users choose guided detector and trading presets.
+- Let advanced users tune detailed filters.
+- Save every setting change.
+- Keep messages formatted with clear headings and compact bullets.
+- Include one helpful tip at the bottom of major menus.
+
+### Portfolio And PnL
+
+Portfolio screens should give users confidence that Lazarus is accounting for them correctly:
+
+- Wallet count.
+- Total value.
+- Open exposure.
+- Realized PnL.
+- Unrealized PnL.
+- Latest snapshot time.
+
+These screens should still be useful in paper mode.
+
+## Acceptance Criteria
+
+### Public Launch Acceptance
+
+Lazarus is ready for public signal-channel launch when:
+
+- Signal posts are readable on mobile.
+- Links resolve correctly.
+- Duplicate prevention works.
+- Channel posting can be paused.
+- Signal scoring thresholds are conservative.
+- The docs clearly explain that alerts are not financial advice.
+
+### User Bot Beta Acceptance
+
+The private user bot is ready for invited beta when:
+
+- Signup works from the Telegram start flow.
+- Referral code attribution works.
+- Wallet generation, import, and watch-only flows work.
+- Presets save and reload.
+- Advanced settings save as Custom.
+- Billing state is visible.
+- Portfolio and PnL screens do not show misleading blank states.
+
+### Live Trading Beta Acceptance
+
+Live trading is ready only when:
+
+- The user has acknowledged live risk.
+- The operator has allowlisted the user.
+- The selected wallet belongs to that user.
+- Paper flow has been validated first.
+- Tiny-funded live entry and exit tests pass.
+- Risk gates and halt/kill switch controls are tested.
+- Admin panel can review the resulting trade records.
+
+## Non-Goals For Early Launch
+
+Not in the early public launch:
+
+- Open live trading for all users.
+- Support every EVM chain.
+- Promise profit or win rate.
+- Replace manual token due diligence.
+- Become a full exchange UI.
+- Expose internal worker details in public docs.

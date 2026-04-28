@@ -67,3 +67,39 @@ Lazarus is not trying to be a generic exchange, a social trading app, or a broad
 - Keep wallet/trade accounting tenant-safe.
 - Add live routing only through controlled, risk-gated rollout.
 
+## What Makes Lazarus Different
+
+Most crypto alert products either send raw noise or require users to stare at dashboards. Lazarus is designed for a narrower problem:
+
+- Find possible token revival moments.
+- Package the evidence clearly.
+- Let users choose how strict the detector should be.
+- Keep the workflow in Telegram.
+- Keep wallet and subscription accounting clean from the start.
+
+The product is intentionally opinionated. It should not post every movement. It should post signals that are strong enough to deserve review.
+
+## The Lazarus Loop
+
+The product loop is:
+
+1. Lazarus watches token activity.
+2. A comeback pattern appears.
+3. The token is scored.
+4. A public alert is posted if it passes threshold.
+5. Users review the alert.
+6. Private bot users can track wallets, tune settings, and monitor outcomes.
+7. Operators review quality and adjust thresholds.
+
+This loop should continuously improve signal quality.
+
+## Launch Philosophy
+
+The safest launch path is:
+
+- Public signal channel first.
+- Private bot trial second.
+- Paper trading validation third.
+- Live trading beta last.
+
+This sequence lets Lazarus prove value before user funds are placed at risk.

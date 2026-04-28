@@ -103,3 +103,80 @@ Lazarus should support:
 - Signal channel pause.
 - Live trading disablement without disabling paper mode.
 
+## Daily Operator Checklist
+
+Operators should review:
+
+- Worker health.
+- Failed signal posts.
+- New users.
+- Trial expirations.
+- Payment confirmations.
+- Pending referral payouts.
+- Abnormal trade-intent failures.
+- Portfolio snapshot failures.
+- Public channel post quality.
+
+## Weekly Operator Checklist
+
+Operators should review:
+
+- Backup status.
+- Referral ledger consistency.
+- Revenue totals.
+- Changelog updates.
+- Signal threshold quality.
+- User support patterns.
+- Live beta readiness.
+
+## Admin Panel Design Standard
+
+The admin panel should be plain and dense:
+
+- Tables over marketing cards.
+- Clear filters.
+- Status badges.
+- Exportable views later.
+- No decorative clutter.
+- Fast access to user, subscription, referral, and worker state.
+
+Operators should be able to answer important business questions in under one minute.
+
+## Escalation Examples
+
+### Signal Spam
+
+Action:
+
+- Raise minimum score.
+- Enable composite-only public posts.
+- Increase cooldown.
+- Pause notifier if needed.
+
+### Payment Not Credited
+
+Action:
+
+- Check invoice status.
+- Check chain/payment address.
+- Check amount match.
+- Review payment events.
+- Manually resolve only with audit trail.
+
+### User Claims Wrong Referral
+
+Action:
+
+- Check attribution source.
+- Check signup timestamp.
+- Check referral code status.
+- Avoid manual changes without recording reason.
+
+### Live Trading Issue
+
+Action:
+
+- Halt entries.
+- Disable live feature flag if needed.
+- Review wallet, tenant, trade intent, transaction, and PnL records.
+- Do not broaden live access until root cause is clear.

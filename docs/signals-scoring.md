@@ -99,3 +99,106 @@ The public channel should avoid spam. Defaults should favor:
 - No duplicate posts for the same signal/channel.
 - Clear links for independent verification.
 
+## Example Public Signal Post
+
+This is the shape of a good public post:
+
+```text
+Lazarus Signal
+
+ABC on Base
+0x1234...abcd
+
+Score
+- Strength: 84/100
+- Audit: 91/100
+- Age: 42d
+
+Market
+- Holders: 1,248
+- Top 10: 21.4%
+- Liquidity: $48.2K
+- DEX: Aerodrome
+
+Checks
+- Renounced: yes
+- Honeypot clear: yes
+- LP locked/burned: 94.0%
+
+DexScreener | Trade Tool
+
+Tip: Verify liquidity, tax, ownership, and chart behavior before trading.
+```
+
+The post should be short, but it should not be vague. Users should know why the token appeared and what to verify next.
+
+## Scoring Inputs By Category
+
+### Market Activity
+
+Signals can become stronger when:
+
+- Volume increases versus baseline.
+- Buy pressure appears after inactivity.
+- Liquidity is added or becomes healthier.
+- The token begins appearing across more holder wallets.
+
+### Holder Quality
+
+Signals can become weaker when:
+
+- Holder count is too low.
+- Top holders are too concentrated.
+- Holder growth looks artificial.
+- New holders appear only in tiny dust amounts.
+
+### Liquidity Quality
+
+Signals can become stronger when:
+
+- Liquidity is meaningful enough for trading.
+- LP is locked or burned.
+- Liquidity is on a supported DEX.
+
+Signals can become weaker when:
+
+- Liquidity is too thin.
+- LP state is unclear.
+- Routing is unreliable.
+
+### Contract Risk
+
+Signals can become weaker when:
+
+- Ownership is not renounced.
+- Honeypot checks are negative or inconclusive.
+- Token metadata is suspicious.
+- Transfer behavior is abnormal.
+
+## User Preset Relationship
+
+Preset choice affects how many signals a user sees:
+
+| Preset | Signal Behavior |
+|---|---|
+| Starter | Fewer alerts, stricter filters, composite-first |
+| Balanced | More opportunities while keeping quality controls |
+| Aggressive | More experimental signals and more noise |
+| Custom | User-defined filters |
+
+The public channel should usually behave closer to Starter than Aggressive.
+
+## Scoring Caveats
+
+Scores are decision support, not certainty.
+
+A token can score highly and still fail because of:
+
+- Bad timing.
+- Hidden contract risk.
+- Poor community follow-through.
+- Liquidity removal.
+- Market-wide volatility.
+- Social manipulation.
+
+Every score should be treated as a prompt for review, not a command to trade.
