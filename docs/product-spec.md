@@ -162,6 +162,9 @@ Required behavior:
 - Post only when a signal passes the configured public threshold.
 - Support a separate watchlist feed for informational token ideas.
 - Use strict CTO-able tokens first, then recent indexed pools/tokens that pass basic safety scoring when CTO-able rows are empty.
+- Require live market data before public watchlist posting: USD liquidity, 24h volume, 24h transactions, pair age, and market cap/FDV when available.
+- Require EVM security checks before public watchlist posting, using honeypot simulation plus GoPlus token security for Base and Ethereum.
+- Track every market-enriched scan internally with first/current/max market cap and multiplier data.
 - Clearly label watchlist posts as `Lazarus Watchlist` and signal posts as `Lazarus Signal`.
 - Never let watchlist-only posts publish executor trade signals.
 - Avoid duplicate channel posts for the same signal.

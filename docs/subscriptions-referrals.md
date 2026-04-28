@@ -43,6 +43,20 @@ Referral model:
 - Users can configure a payout wallet.
 - Earnings can be claimed or paid out based on operator rules.
 
+## Holder Revenue Sharing Direction
+
+The referral model should stay referrer-first. A holder rewards program can sit beside it, but it should be a separate treasury/rewards ledger rather than being mixed into referral accounting.
+
+Recommended draft policy:
+
+- Referral share: 25% of eligible subscription revenue and eligible bot transaction fees attributed to the referral code.
+- Holder rewards pool: up to 50% of net platform revenue after infrastructure, RPC, API, treasury, and operating reserves.
+- Eligibility: wallets holding at least 0.5% of the qualifying Lazarus holder supply at snapshot time.
+- Distribution: monthly claim window or batched treasury payout, not automatic until treasury controls and payout caps exist.
+- Anti-abuse: minimum holding period, wash-transfer checks, excluded team/treasury wallets, and clear public terms.
+
+This needs legal and tax review before being marketed as a live holder yield program.
+
 ## Referral UX
 
 The bot should make referrals easy:

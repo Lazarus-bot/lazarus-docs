@@ -10,6 +10,17 @@ A notifier-only post for tokens that are already CTO-able, or recent indexed poo
 
 Watchlist ideas should not trigger automatic trade execution. They are a discovery feed for users who want names to research.
 
+Watchlist ideas must pass hard market and safety gates before posting:
+
+- DexScreener liquidity in USD must be known and above the launch threshold.
+- 24h volume and transaction count must be known and above the launch threshold.
+- Pair age must be known.
+- Honeypot status must be clear.
+- GoPlus EVM token security must not report blocking risks.
+- Buy and sell tax must stay inside the configured maximum.
+
+Tokens that fail these gates can still be tracked internally for measurement, but they should not be posted publicly.
+
 ### Composite
 
 A combined signal that blends several revival indicators. This is the preferred signal type for cautious users.
@@ -112,6 +123,18 @@ The channel should maintain two clear categories:
 |---|---|---|
 | Lazarus Signal | A detector event passed the public signal threshold | Can also be used by backend execution logic when user settings allow it |
 | Lazarus Watchlist | A token looks worth reviewing from CTO audit data | Informational only; no executor trade stream publish |
+
+## Feed Tracking
+
+Lazarus should record every market-enriched token scan so operators can measure whether the feed is improving:
+
+- First observed price, market cap, and liquidity.
+- Current price, market cap, and liquidity.
+- Max observed price and market cap.
+- Max multiplier from first observation.
+- Snapshot history from each scan.
+
+This tracking data is for quality assurance and backtesting. It should help answer: “Did Lazarus find this before the move, or after the move?”
 
 ## Example Public Signal Post
 

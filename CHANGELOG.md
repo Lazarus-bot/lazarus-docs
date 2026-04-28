@@ -14,6 +14,9 @@ The private code repository has its own engineering changelog. This public chang
 - Added detailed docs for product overview, product specification, Telegram UX, signals/scoring, wallets/security, subscriptions/referrals, admin operations, launch readiness, system model, user journeys, glossary, FAQ, and documentation policy.
 - Documented the alert bot watchlist feed as a separate informational post category from executor-grade signal posts.
 - Clarified that watchlist ideas can come from strict CTO-able rows or recent indexed pools/tokens that pass basic safety scoring.
+- Added strict watchlist gate requirements for DexScreener market data and GoPlus EVM security checks.
+- Added the token scan tracking model for first/current/max market data and multiplier measurement.
+- Added a draft holder revenue-sharing direction separate from referral accounting.
 
 ### Changed
 
