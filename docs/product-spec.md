@@ -160,6 +160,9 @@ The signal channel is the top of the funnel. It should make Lazarus feel alive b
 Required behavior:
 
 - Post only when a signal passes the configured public threshold.
+- Support a separate watchlist feed for informational token ideas.
+- Clearly label watchlist posts as `Lazarus Watchlist` and signal posts as `Lazarus Signal`.
+- Never let watchlist-only posts publish executor trade signals.
 - Avoid duplicate channel posts for the same signal.
 - Keep the message short enough for Telegram mobile.
 - Include enough data for independent review.
@@ -174,6 +177,12 @@ Good signal posts should answer:
 - How strong is the signal?
 - How risky does the token look from basic checks?
 - Where can I verify it?
+
+Watchlist posts should answer a simpler question:
+
+- Is this token worth putting on my review list today?
+
+They should be useful for discovery without implying that Lazarus is telling the user to buy.
 
 ### Private User Bot
 

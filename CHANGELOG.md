@@ -12,11 +12,13 @@ The private code repository has its own engineering changelog. This public chang
 - Added GitBook navigation through `SUMMARY.md`.
 - Added a stronger landing README explaining the product, surfaces, principles, and public/private repository split.
 - Added detailed docs for product overview, product specification, Telegram UX, signals/scoring, wallets/security, subscriptions/referrals, admin operations, launch readiness, system model, user journeys, glossary, FAQ, and documentation policy.
+- Documented the alert bot watchlist feed as a separate informational post category from executor-grade signal posts.
 
 ### Changed
 
 - Expanded the public docs into a fuller GitBook handbook with concrete user journeys, launch stages, operator checklists, example Telegram menus, example signal posts, scoring caveats, payment states, referral lifecycle, and acceptance criteria.
 - Reworked navigation into clearer sections: Product, Telegram Experience, Trust And Operations, and Reference.
+- Updated signal/scoring docs with the `Lazarus Watchlist` format and explicit guidance that watchlist ideas do not trigger automatic execution.
 
 ### Clarified
 

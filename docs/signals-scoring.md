@@ -4,6 +4,12 @@ Lazarus evaluates tokens through multiple lenses and converts the result into us
 
 ## Signal Types
 
+### Watchlist Idea
+
+A notifier-only post for tokens that are already CTO-able and worth human review, but are not necessarily a fresh executor-grade trade signal. Watchlist ideas should be labelled as `Lazarus Watchlist` and use `Token idea` in the score section so users understand the difference.
+
+Watchlist ideas should not trigger automatic trade execution. They are a discovery feed for users who want names to research.
+
 ### Composite
 
 A combined signal that blends several revival indicators. This is the preferred signal type for cautious users.
@@ -94,10 +100,18 @@ The audit score is not a guarantee. It is a quick triage indicator.
 The public channel should avoid spam. Defaults should favor:
 
 - Composite signals.
+- Watchlist ideas with a separate label from trade signals.
 - Higher minimum score.
 - Cooldowns per token.
 - No duplicate posts for the same signal/channel.
 - Clear links for independent verification.
+
+The channel should maintain two clear categories:
+
+| Category | User Meaning | Execution Meaning |
+|---|---|---|
+| Lazarus Signal | A detector event passed the public signal threshold | Can also be used by backend execution logic when user settings allow it |
+| Lazarus Watchlist | A token looks worth reviewing from CTO audit data | Informational only; no executor trade stream publish |
 
 ## Example Public Signal Post
 
@@ -131,6 +145,37 @@ Tip: Verify liquidity, tax, ownership, and chart behavior before trading.
 ```
 
 The post should be short, but it should not be vague. Users should know why the token appeared and what to verify next.
+
+## Example Watchlist Post
+
+Watchlist posts should look similar, but the heading and signal label must make the lower-commitment intent clear:
+
+```text
+Lazarus Watchlist
+
+ABC on Base
+0x1234...abcd
+
+Score
+- Strength: 78/100 - Token idea
+- Audit: 78/100
+- Age: 12d
+
+Market
+- Holders: 842
+- Top 10: 28.6%
+- Liquidity: $31.4K
+- DEX: Aerodrome
+
+Checks
+- Renounced: yes
+- Honeypot clear: yes
+- LP locked/burned: 82.0%
+
+DexScreener | Trade Tool
+
+Tip: Watchlist ideas are leads. Verify chart, liquidity, tax, and holders before acting.
+```
 
 ## Scoring Inputs By Category
 

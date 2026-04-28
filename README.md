@@ -14,7 +14,9 @@ Lazarus watches for tokens that look dead, scores signs that they may be coming 
 
 ### Public Signal Channel
 
-The public notifier is a Telegram channel for high-signal CTO alerts. Each post is designed for fast mobile review:
+The public notifier is a Telegram channel for high-signal CTO alerts and lighter watchlist ideas. Signal posts are for higher-conviction detector events. Watchlist posts are general token ideas sourced from active CTO-able tokens, clearly labelled so users know they are leads to inspect rather than trade instructions.
+
+Each post is designed for fast mobile review:
 
 - Token name and symbol.
 - Chain.
@@ -27,6 +29,8 @@ The public notifier is a Telegram channel for high-signal CTO alerts. Each post 
 - Ownership, honeypot, and LP checks.
 - DexScreener and trading-tool links.
 - One concise tip reminding users to verify before acting.
+
+Watchlist posts use the `Lazarus Watchlist` heading and `Token idea` label. They should be tuned with conservative score thresholds and per-token cooldowns to avoid noise.
 
 ### Private User Bot
 
@@ -125,4 +129,3 @@ Lazarus is in production-readiness buildout:
 ## Important Notice
 
 Lazarus deals with volatile on-chain markets. Public signal posts are informational and are not financial advice. Users are responsible for their own wallet security, risk exposure, and trading decisions.
-
